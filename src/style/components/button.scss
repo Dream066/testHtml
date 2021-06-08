@@ -1,0 +1,31 @@
+.button {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 42px;
+    color: $white;
+    background-color: $green;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 600;
+    transition: opacity .3s ease;
+
+    img {
+        transition: transform .3s ease;
+    }
+
+    &:hover {
+        opacity: 0.8;
+
+        img {
+            transform: translateX(10px);
+        }
+    }
+
+    span {
+        margin-right: 10px;
+    }
+}

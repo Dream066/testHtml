@@ -1,0 +1,32 @@
+.select {
+    display: flex;
+    align-items: center;
+    padding: 16px 16px;
+    background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 100%;
+    transition: border .3s ease;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid rgba(66, 138, 96, 0.7);
+    }
+
+    @include media('sm') {
+        padding: 16px 10px;
+    }
+
+    &-current-item {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+
+        img {
+            margin-left: 10px;
+        }
+    }
+}

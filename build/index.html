@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <main class="main">
+      <div class="feedback">
+        <div class="container feedback__container">
+          <div class="feedback__inner"> 
+            <div class="feedback__row">
+              <div class="feedback__preview-wrapper">
+                <div class="feedback__text text-md">Reduslim</div>
+                <div class="feedback__text text-md">ECO</div>
+                <div class="feedback__preview"><img class="feedback__img" src="img/reduslim.png"></div>
+              </div>
+              <div class="feedback__form-wrapper">
+                <div class="feedback__title title">Сделай шаг к выздоровлению</div>
+                <form class="feedback__form">
+                  <div class="feedback__form-field">
+                    <label class="feedback__label input-label text-sm-uppercase">Ваше <span>имя</span></label>
+                    <input class="feedback__input input" type="text" placeholder="Алексей">
+                  </div>
+                  <div class="feedback__form-field">
+                    <label class="feedback__label input-label text-sm-uppercase">Ваш <span>телефон</span></label>
+                    <div class="feedback__form-group"> 
+                      <input class="feedback__input input" type="tel" placeholder="+7 (123) 456 78-90">
+                      <div class="feedback__select-wrapper">
+                        <button class="select"> 
+                          <div class="select-current-item">RU <img src="img/ru.jpg"></div><img class="select-decor" src="img/select.svg">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="feedback__form-button button" type="submit"><span>Заказать</span><img src="img/arrow.svg"></button>
+                  <div class="feedback__protection">
+                    <div class="feedback__protection-text text-md">Trusted</div><img class="feedback__protection-img" src="img/lock.svg">
+                    <div class="feedback__protection-text text-md">Secure</div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+  </body>
+</html>

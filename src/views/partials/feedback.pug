@@ -1,0 +1,34 @@
+.feedback
+    .container.feedback__container
+        .feedback__inner 
+            .feedback__row
+                .feedback__preview-wrapper
+                    .feedback__text.text-md Reduslim
+                    .feedback__text.text-md ECO
+                    .feedback__preview
+                        img.feedback__img(src="img/reduslim.png")
+                .feedback__form-wrapper
+                    .feedback__title.title Сделай шаг к выздоровлению
+                    form.feedback__form
+                        .feedback__form-field
+                            label.feedback__label.input-label.text-sm-uppercase Ваше <span>имя</span>
+                            input.feedback__input.input(type="text" placeholder="Алексей")
+                        .feedback__form-field
+                            label.feedback__label.input-label.text-sm-uppercase Ваш <span>телефон</span>
+                            .feedback__form-group 
+                                input.feedback__input.input(type="tel" placeholder="+7 (123) 456 78-90")
+                                .feedback__select-wrapper
+                                    button.select 
+                                        .select-current-item RU 
+                                            img(src="img/ru.jpg")
+                                        img(src="img/select.svg").select-decor
+                        button.feedback__form-button.button(type="submit")
+                            span Заказать
+                            img(src="img/arrow.svg")
+                        .feedback__protection
+                            .feedback__protection-text.text-md Trusted
+                            img.feedback__protection-img(src="img/lock.svg")
+                            .feedback__protection-text.text-md Secure
+
+
+
