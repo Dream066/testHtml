@@ -7,7 +7,6 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
     <link href="css/main.css" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
@@ -26,17 +25,21 @@
                 <div class="feedback__title title">Сделай шаг к выздоровлению</div>
                 <form class="feedback__form">
                   <div class="feedback__form-field">
-                    <label class="feedback__label input-label text-sm-uppercase">Ваше <span>имя</span></label>
-                    <input class="feedback__input input" type="text" placeholder="Алексей">
+                    <label class="feedback__label input-label text-sm-uppercase" id="name">Ваше <span>имя</span></label>
+                    <input class="feedback__input input" type="text" for="name" placeholder="Алексей">
                   </div>
                   <div class="feedback__form-field">
-                    <label class="feedback__label input-label text-sm-uppercase">Ваш <span>телефон</span></label>
+                    <label class="feedback__label input-label text-sm-uppercase" id="tel">Ваш <span>телефон</span></label>
                     <div class="feedback__form-group"> 
-                      <input class="feedback__input input" type="tel" placeholder="+7 (123) 456 78-90">
-                      <div class="feedback__select-wrapper">
-                        <button class="select"> 
+                      <input class="feedback__input input js-input" type="tel" for="tel" placeholder="+7 (123) 456 78-90">
+                      <div class="feedback__select-wrapper select-wrapper">
+                        <button class="select js-select">
                           <div class="select-current-item">RU <img src="img/ru.jpg"></div><img class="select-decor" src="img/select.svg">
                         </button>
+                        <ul class="select__list js-select-list">
+                          <li class="select__list-item">EN</li>
+                          <li class="select__list-item">DE</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -52,6 +55,6 @@
         </div>
       </div>
     </main>
-    <script src="js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

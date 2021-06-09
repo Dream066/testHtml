@@ -11,17 +11,20 @@
                     .feedback__title.title Сделай шаг к выздоровлению
                     form.feedback__form
                         .feedback__form-field
-                            label.feedback__label.input-label.text-sm-uppercase Ваше <span>имя</span>
-                            input.feedback__input.input(type="text" placeholder="Алексей")
+                            label.feedback__label.input-label.text-sm-uppercase(id='name') Ваше <span>имя</span>
+                            input.feedback__input.input(type="text" for="name" placeholder="Алексей")
                         .feedback__form-field
-                            label.feedback__label.input-label.text-sm-uppercase Ваш <span>телефон</span>
+                            label.feedback__label.input-label.text-sm-uppercase(id='tel') Ваш <span>телефон</span>
                             .feedback__form-group 
-                                input.feedback__input.input(type="tel" placeholder="+7 (123) 456 78-90")
-                                .feedback__select-wrapper
-                                    button.select 
+                                input.feedback__input.input.js-input(type="tel" for="tel" placeholder="+7 (123) 456 78-90")
+                                .feedback__select-wrapper.select-wrapper
+                                    button.select.js-select
                                         .select-current-item RU 
                                             img(src="img/ru.jpg")
                                         img(src="img/select.svg").select-decor
+                                    ul.select__list.js-select-list
+                                        li.select__list-item EN
+                                        li.select__list-item DE
                         button.feedback__form-button.button(type="submit")
                             span Заказать
                             img(src="img/arrow.svg")
